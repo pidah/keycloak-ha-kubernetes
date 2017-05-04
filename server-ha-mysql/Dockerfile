@@ -12,5 +12,4 @@ RUN xsl-transform /opt/jboss/keycloak/standalone/configuration/standalone-ha.xml
   && xsl-transform /opt/jboss/keycloak/standalone/configuration/standalone-ha.xml /tmp/node-identifier.xsl
 
 RUN sed -i 's/8443/443/g' /opt/jboss/keycloak/standalone/configuration/standalone-ha.xml \
-  && sed -i 's/http-listener name="default"/http-listener name="default" proxy-address-forwarding="true"/g' /opt/jboss/keycloak/standalone/configuration/standalone-h
-a.xml
+  && sed -i 's/http-listener name="default"/http-listener name="default" proxy-address-forwarding="true"/g' /opt/jboss/keycloak/standalone/configuration/standalone-ha.xml
