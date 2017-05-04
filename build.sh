@@ -2,8 +2,8 @@
 
 set -e
 
-VERSION=${1:-0.0.2}
-DOCKER_REPO="pidah/keycloak-ha-kubernetes"
+VERSION=${1:-0.0.4}
+DOCKER_REPO="pidah/keycloak-ha-mysql"
 DOCKER_IMAGE=${DOCKER_REPO}:${VERSION}
 
 # run tests before build
